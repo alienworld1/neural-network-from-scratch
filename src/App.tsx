@@ -1,5 +1,12 @@
+import Neuron from './neural-network/neuron';
+import NeuronVisualizer from './components/NeuronVisualizer';
+
 export default function App() {
+  const neuron = new Neuron([0, 1], 4);
+
   return (
-    <h1 className="text-3xl font-bold">Hello, world!</h1>
-  )
+    <div>
+      <NeuronVisualizer neuron={neuron} />
+    </div>
+  );
 }
